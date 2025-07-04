@@ -1,24 +1,23 @@
-const form = document.getElementById('form'); 
-const auteur= document.getElementById ('auteur')
-const bouton = document.getElementById('soumettre'); 
+//const citationInput= document.getElementById('citation-input'); 
+//const authorInput= document.getElementById ('author-input')
+//const bouton = document.getElementById('soumettre'); 
 const citation= document.getElementById('citation')
+//const text= document.getElementById('text')
+const author=document.getElementById('author')
+const form=document.getElementById('form')
 
-form.addEventListener('input', () => {
-console.log(form)
 
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault()
+   const citationValue= event.target.citationInput.value
+   const authorValue= event.target.authorInput.value
+   citation.innerHTML=citationValue
+   author.innerHTML=authorValue
 })
 
-auteur.addEventListener('input', () => {
-    console.log(auteur)
-})
-
-bouton.addEventListener('click', () => {
-    console.log(citation)
-    console.log(auteur)
-    // Afficher citation
-    // Afficher auteur
-})
-
-document.getElementById('affichage').innerText = `"${citation.value}" — ${auteur.value}`;
 
 
+function addQuote(quote, author) {
+    
+}
