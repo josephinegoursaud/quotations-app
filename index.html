@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
-    <title>Quotations_App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <title>Quotations_App</title>
 </head>
+
 <body>
-    <h1>Mes citations</h1>
-    <h2>Gestionnaire de citations en ligne</h2>
-    <h3>0 citations</h3>
-    <hr>
+  <h1>Mes citations</h1>
+  <h2>Gestionnaire de citations en ligne</h2>
+  <h3 id= "count"> 0 citations</h3>
+  <hr>
 
-    <form method="get" id="form">
-         <label for="citationInput">Saisir la citation :</label>
-         <input type="text" id="citationInput" placeholder="Votre citation est ici">
-        <label for="authorInput">Saisir le nom de l auteur ou de l autrice :</label>
+  <form method="get" id="form">
+    <label for="citationInput">Saisir la citation :</label>
+    <input type="text" id="citationInput" placeholder="Votre citation est ici">
+    <label for="authorInput">Saisir le nom de l auteur ou de l autrice :</label>
     <input type="text" id="authorInput" placeholder="Nom de l’auteur/autrice">
-    <button type="submit"> soumettre la citation </button> 
-     
-</form>
+    <button type="submit"> soumettre la citation </button>
+
+  </form>
 
 
-    <div id="quote-list">
-  <div class="quote">
-    <p  id="citation">"On ne naît pas femme, on le devient."</p>
-    <p  id="author">Simone de Beauvoir</p>
+  <div id="quote-list">
+    <div class="quote">
+      <p id="citationValue">"On ne naît pas femme, on le devient."</p>
+      <p id="authorValue">Simone de Beauvoir</p>
+    </div>
   </div>
 
-        
 
 </body>
+
 </html>
